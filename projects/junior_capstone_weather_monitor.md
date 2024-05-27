@@ -42,11 +42,11 @@ Here are some visuals from the project
 
 ![Temperature Data Graph](/images/junior_capstone_weather_monitor_images/jun_temp_data.jpg)
 
-**Figure 2: Temperature Data Graph** - This graph displays the correlation between the temperature readings from the sensor (yellow line) and the real temperature values (red line). The graph provides insight into the sensor's performance and accuracy in real-time temperature monitoring.
+**Figure 2: Temperature Data Graph** - This graph displays the correlation between the temperature readings from the sensor (red line) and the real temperature values (yellow line). The graph provides insight into the sensor's performance and accuracy in real-time temperature monitoring.
 
 ![Humidity Data Graph](/images/junior_capstone_weather_monitor_images/jun_humidity_data.jpg)
 
-**Figure 3: Humidity Data Graph** - This graph compares the sensor's humidity readings (yellow line) against actual measured humidity values (red line) over time. The data highlights the sensor's accuracy and responsiveness to environmental changes, essential for reliable microclimate monitoring.
+**Figure 3: Humidity Data Graph** - This graph compares the sensor's humidity readings (red line) against actual measured humidity values (yellow line) over time. The data highlights the sensor's accuracy and responsiveness to environmental changes, essential for reliable microclimate monitoring.
 
 
 Thank you for exploring this project. For more detailed discussions or technical inquiries, feel free to contact me.
