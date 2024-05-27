@@ -16,8 +16,5 @@ During my internship at Chemprene LLC, I engaged in various engineering tasks th
 - **Efficiency Improvements:** My work on SOPs, system optimizations, and operational analysis resulted in a measurable decrease in machine downtime and increased operational efficiency.
 - **Safety Enhancements:** The projects I led, including the installation of safety platforms, directly contributed to a safer workplace, reducing the risk of accidents.
 
-## Gallery
-
-Here are some images and diagrams from my internship (add images or diagrams as appropriate).
 
 Thank you for exploring my internship experience. For more details or to discuss my contributions further, please contact me.
