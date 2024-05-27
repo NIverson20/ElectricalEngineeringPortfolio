@@ -1,28 +1,45 @@
-# NNL Capstone Project: Energy Harvesting Device
+# NNL Capstone Project: Energy Harvesting Embedded System
 
 ## Project Overview
 
-As part of my Capstone project at the University at Albany, I worked on designing and developing a microcontroller-based sensor prototype that could operate autonomously without an external power supply for at least 30 days. This project focused on utilizing different types of energy transducers to achieve sustainable energy harvesting.
+This project, conducted at the Naval Nuclear Labs, aimed to develop an energy-harvesting embedded system that operates independently of traditional power sources. This capability is crucial for applications where power availability is limited or non-existent.
+
+## Importance of the Project
+
+The system's ability to harness environmental energy allows it to capture critical temperature data continuously, without concerns about power outages or the need for battery replacements. This technology is vital for long-term environmental monitoring and other autonomous operations.
+
+## Problem Statement
+
+The objective was to create a microcontroller-based sensor prototype capable of logging temperature data without a power supply or battery for at least 30 days. The device would utilize various transducers to harness energy from solar, RF, heat, and vibration sources.
+
+## Key System Requirements
+
+- **Functional Requirements:** Record temperature data at intervals ranging from 30 seconds to 5 minutes for at least 30 days autonomously.
+- **Non-Functional Requirements:** The device must operate as a closed system with secure, temporary hardwired connections for data transmission and withstand long periods without human intervention.
 
 ## My Role
 
-My responsibilities included:
-- **Design and Simulation:** Assisting in the selection and design of energy transducers, including solar, RF, heat, and vibration options.
-- **Data Analysis:** Conducting extensive tests to measure the efficiency and output of each transducer under varying conditions.
-- **Prototype Development:** Collaborating in the development of the embedded system, integrating the microcontroller with the energy transducers.
+- **System Design and Integration:** Involved in comparing and selecting microcontrollers based on their power consumption and capabilities. Also, designed and tested the integration of energy transducers with the microcontroller.
+- **Data Analysis and Optimization:** Conducted extensive testing to optimize the power consumption of the microcontroller, achieving low power draws essential for long-term deployment.
+- **Prototyping and Testing:** Assisted in the physical assembly of the device and conducted field tests to validate the functionality under various environmental conditions.
 
 ## Challenges and Solutions
 
-One of the significant challenges was optimizing the energy consumption of the microcontroller to extend its operational life. Through iterative testing and adjustments, we managed to reduce the power draw to micro-watt levels, aligning with the energy output from the transducers.
+A primary challenge was minimizing the power consumption of the microcontroller while maintaining reliable data logging capabilities. Through iterative design and testing, we achieved ambient power draws significantly lower than typical low-power devices, which was a critical success factor for the project.
 
 ## Results and Impact
 
-The project successfully demonstrated that the prototype could last indefinitely with the right configuration of power management and transducers, showcasing a viable solution for long-term energy-independent sensors.
+The project demonstrated the feasibility of a self-sustaining microcontroller system, with power consumption low enough to allow indefinite operation under optimal conditions. This breakthrough paves the way for more widespread use of autonomous sensors in remote or challenging environments.
 
-## Gallery
+## Technical Details
 
-Here are some visuals from the project (add images or diagrams as appropriate).
+- **Microcontroller Used:** MSP430FR5994, known for its low power consumption and sufficient memory capacity.
+- **Energy Transducers:** Included solar cells and piezoelectric sensors, which were crucial for the device's energy autonomy.
+- **Performance Metrics:** The system's power management was fine-tuned to achieve an operational power draw of approximately 5µW, with a potential indefinite lifespan under certain conditions.
 
-Thank you for exploring this project. For more information or a detailed discussion on the technical aspects, feel free to contact me.
+## Next Steps
 
+- Further development will focus on refining the energy management system, enhancing data transmission security, and fully integrating the system into a printed circuit board (PCB) for robustness and ease of deployment.
+
+Thank you for exploring this project. For more detailed discussions or technical inquiries, feel free to contact me.
 
