@@ -36,5 +36,8 @@ The prototype demonstrated the potential for cost-effective monitoring of microc
 
 Here are some visuals from the project (add images or diagrams as appropriate).
 
+![Description of image](URL_to_image)
+
+
 Thank you for exploring this project. For more detailed discussions or technical inquiries, feel free to contact me.
 
