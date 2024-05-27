@@ -37,12 +37,15 @@ The prototype demonstrated the potential for cost-effective monitoring of microc
 Here are some visuals from the project
 
 ![Logical Design Diagram](/images/junior_capstone_weather_monitor_images/jun_logical_design.jpg)
+
 **Figure 1: Logical Design Diagram** - This diagram outlines the logical structure of the field unit used in the microclimate monitoring system. It shows the integration of the sensor, processing unit, and power system within the unit, detailing the flow of data and energy.
 
 ![Temperature Data Graph](/images/junior_capstone_weather_monitor_images/jun_temp_data.jpg)
+
 **Figure 2: Temperature Data Graph** - This graph displays the correlation between the temperature readings from the sensor (yellow line) and the real temperature values (red line). The graph provides insight into the sensor's performance and accuracy in real-time temperature monitoring.
 
 ![Humidity Data Graph](/images/junior_capstone_weather_monitor_images/jun_humidity_data.jpg)
+
 **Figure 3: Humidity Data Graph** - This graph compares the sensor's humidity readings (yellow line) against actual measured humidity values (red line) over time. The data highlights the sensor's accuracy and responsiveness to environmental changes, essential for reliable microclimate monitoring.
 
 
