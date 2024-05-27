@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project, conducted at the Naval Nuclear Labs, aimed to develop an energy-harvesting embedded system that operates independently of traditional power sources. This capability is crucial for applications where power availability is limited or non-existent.
+This project, sponsered by the Naval Nuclear Labs, aimed to develop an energy-harvesting embedded system that operates independently of traditional power sources. This capability is crucial for applications where power availability is limited or non-existent.
 
 ## Importance of the Project
 
