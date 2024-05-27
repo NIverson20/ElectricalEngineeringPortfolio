@@ -36,7 +36,7 @@ The prototype demonstrated the potential for cost-effective monitoring of microc
 
 Here are some visuals from the project (add images or diagrams as appropriate).
 
-![Description of image](URL_to_image)
+![Description of image](images/junior_capstone_weather_monitor_images/jun logical design.JPG)
 
 
 Thank you for exploring this project. For more detailed discussions or technical inquiries, feel free to contact me.
