@@ -30,6 +30,8 @@ The challenge was to accurately measure and compare the subtle performance diffe
 ## Gallery
 
 ```c
+// Sample C code snippet used for benchmarking
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h> 
@@ -86,6 +88,13 @@ int main(){
 
 	double Time_End = omp_get_wtime(); // end the timer
 	ex_time += (Time_End - Time_Start); //add the time of each loop to toghther for total time executing
+```
 
-![Benchmark Output -O0](/images/computer_architecture_project_images/VM_Test_O0.jpg)
+![Benchmark Output -O0](/images/computer_architecture_project_images/VM_Test_O0.JPG)
+
 **Figure 1: Benchmark Output with Compiler Optimization -O0** - This screenshot displays the output of the benchmark test running on an Intel Xeon 6338 processor with compiler optimization set to -O0. The test measures the execution time for the DAXPY algorithm without any optimization, providing a baseline for performance comparison. The output details include processor speed, the arithmetic algorithm tested, and the total elapsed time to complete the benchmark.
+
+![Benchmark Output -O2](/images/computer_architecture_project_images/VM_Test_O2.JPG)
+
+**Figure 2: Benchmark Output with Compiler Optimization -O2** - This screenshot shows the output from the same benchmark test but with compiler optimization set to -O2. Notice the significant reduction in total elapsed time, demonstrating the effectiveness of higher-level optimizations on processing speed. The screenshot also includes detailed metrics such as the number of elements processed, total elapsed time, and execution time per element.
+
