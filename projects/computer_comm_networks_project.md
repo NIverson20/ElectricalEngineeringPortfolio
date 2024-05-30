@@ -76,10 +76,10 @@ def send_snw(data, timeout=2):
 
 The complete source code for this project is available in this repository. You can view and download the code files using the links below:
 
-- [Client Module Code](/path/to/client.py)
-- [Cache Module Code](/path/to/cache.py)
-- [Server Module Code](/path/to/server.py)
-- [SNW Transport Protocol Code](/path/to/snw_transport.py)
-- [TCP Transport Protocol Code](/path/to/tcp_transport.py)
+- [Client Module Code](/code/computer_comm_networks_project_code/cache.py)
+- [Cache Module Code](/code/computer_comm_networks_project_code/cache.py)
+- [Server Module Code](/code/computer_comm_networks_project_code/server.py)
+- [SNW Transport Protocol Code](/code/computer_comm_networks_project_code/snw_transport.py)
+- [TCP Transport Protocol Code](/code/computer_comm_networks_project_code/tcp_transport.py)
 
 These files contain all the implementation details for the file transfer system using TCP and SNW protocols.
