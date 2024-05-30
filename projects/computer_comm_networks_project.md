@@ -44,8 +44,6 @@ Below are some excerpts from the project's codebase, showcasing the implementati
 
 Below are some excerpts from the project's codebase, showcasing the implementation of the client, cache, and server modules, as well as the transport protocols.
 
-### Client.py
-
 # Sample from client.py
 ```python
 import socket
@@ -70,6 +68,39 @@ class Cache:
 
     def store_file(self, filename, data):
         self.files[filename] = data
+```
+
+# Sample from server.py
+```pyton
+import socket
+
+def handle_client(conn):
+    with open('received_file', 'wb') as f:
+        while True:
+            data = conn.recv(1024)
+            if not data:
+                break
+            f.write(data)
+    conn.close()
+```
+# Sample from snw_transport.py
+```pyton
+def send_snw(data, timeout=2):
+    ack_received = False
+    while not ack_received:
+        # Send packet
+        # Wait for acknowledgment
+        # Resend if timeout
+```
+# Sample from tcp_transport.py
+```python
+import socket
+
+def send_tcp(data):
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect((HOST, PORT))
+    s.sendall(data)
+    s.close()
 ```
 
 ## Full Code
