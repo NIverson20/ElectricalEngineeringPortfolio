@@ -2,49 +2,58 @@
 
 ## Project Overview
 
-This project was part of my Computer Organization and Architecture course, where I developed a series of benchmark tests in C to evaluate the performance differences across various virtual machines running on Linux. The goal was to understand how different virtualization technologies impact processing speeds under various computational loads.
+This project, conducted as part of my coursework in Computer Organization and Architecture, involved developing and running benchmark tests in C to assess the processing speeds of different virtual machines (VMs) on a Linux system. The focus was to understand how virtualization impacts performance across various VM configurations.
 
 ## Objectives
 
-- **Develop Benchmark Tests:** Write custom C programs to test computational performance, including CPU-bound and memory-bound operations.
-- **Run Tests on Different VMs:** Execute these tests on multiple virtual machines to compare the processing speeds.
-- **Analyze Performance:** Collect and analyze data to determine the impact of different virtual environments on performance.
+- **Develop Benchmark Tests:** Implement benchmark programs in C to evaluate the computational performance of VMs, focusing on CPU-bound tasks using the DAXPY algorithm for double precision floating-point operations.
+- **Run Tests on Different VMs:** Execute these benchmarks on virtual machines configured with various resource allocations to compare their processing speeds.
+- **Analyze Performance:** Collect and analyze data to draw conclusions about the efficiency and performance scalability of VMs under different loads.
 
 ## My Role
 
-- **Program Development:** I wrote multiple benchmark programs in C, designed to test various aspects of computer processing, including arithmetic operations, memory access patterns, and disk I/O.
-- **Test Execution:** I ran these programs on several virtual machines configured with different resources and operating systems to gather a broad data set.
-- **Data Analysis:** Utilized Linux tools to monitor and record performance metrics, which were then analyzed to draw conclusions about each VM's efficiency and speed.
+- **Program Development:** Authored C programs to perform extensive arithmetic operations (specifically DAXPY) and measure their performance across different optimization levels.
+- **Test Execution:** Conducted tests on an Intel Xeon 6338 processor under different compiler flags to measure execution times and optimization impacts.
+- **Data Analysis:** Analyzed the results to understand the effect of compiler optimizations and CPU clock cycles on arithmetic computation speeds.
 
 ## Challenges and Solutions
 
-One significant challenge was ensuring that the benchmark tests reliably measured the performance characteristics of each VM without external influences. I addressed this by:
-- Standardizing the test environment, ensuring that all background processes were minimized.
-- Running multiple iterations of each test to average out any anomalies.
+The challenge was to accurately measure and compare the subtle performance differences between VMs, particularly under varying compiler optimizations. This was addressed by:
+- **Standardizing Test Conditions:** Ensuring consistent conditions across all tests to avoid external performance influences.
+- **Detailed Metric Analysis:** Utilizing precise performance metrics such as execution time per operation and sustained double-precision operations per second to quantify the differences.
 
 ## Results and Impact
 
-The tests revealed noticeable differences in processing speeds between VMs, particularly highlighting how resource allocation and VM configuration can dramatically affect performance. These insights are valuable for optimizing virtual environments in real-world applications, improving both efficiency and cost-effectiveness.
+- The benchmarks highlighted significant performance improvements with optimization. For example, the `-O2` optimization level showed a nearly 4x speed increase compared to `-O0`, illustrating the potential of compiler optimizations in enhancing computational efficiency.
+- The tests also provided insights into the pipeline efficiency and potential data hazards affecting performance, contributing valuable data for optimizing future virtualization setups.
 
 ## Gallery
 
-Here are some code snippets and graphs from the project (add images or code blocks as appropriate).
-
 ```c
-// Example of a benchmark test in C
+// Sample C code snippet used for benchmarking
 #include <stdio.h>
 #include <time.h>
 
 int main() {
+    double a[1000], x[1000], y[1000], z[1000];
     clock_t start, end;
     double cpu_time_used;
+    int i;
+
+    // Initialize arrays
+    for (i = 0; i < 1000; i++) {
+        a[i] = x[i] = y[i] = 1.0;
+    }
 
     start = clock();
-    // Code to benchmark CPU speed
+    // DAXPY operation
+    for (i = 0; i < 1000; i++) {
+        z[i] = a[i] * x[i] + y[i];
+    }
     end = clock();
 
     cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-    printf("CPU Time: %f seconds", cpu_time_used);
+    printf("Time taken: %f seconds\n", cpu_time_used);
 
     return 0;
 }
