@@ -52,8 +52,8 @@ Here are some visuals from the project
 
 ![Logical Design Diagram](/images/nnl_capstone_images/nnl_vibrational_voltage_output.JPG)
 
-![Logical Design Diagram](/images/nnl_capstone_images/nnl_micro_power_usage.JPG)
+![Logical Design Diagram](/images/nnl_capstone_images/nnl_voltage_output_transducers.JPG)
 
-![Logical Design Diagram](/images/nnl_capstone_images/nnl_micro_power_usage.JPG)
+
 Thank you for exploring this project. For more detailed discussions or technical inquiries, feel free to contact me.
 
