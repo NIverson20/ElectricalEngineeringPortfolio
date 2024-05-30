@@ -45,7 +45,7 @@ The project demonstrated the feasibility of a self-sustaining microcontroller sy
 
 Here are some visuals from the project
 
-![Logical Design Diagram](/images/junior_capstone_weather_monitor_images/jun_logical_design.jpg)
+![Logical Design Diagram](/images/nnl_capstone_images/nnl_logical_design.JPG)
 
 **Figure 1: Logical Design Diagram** - This diagram outlines the logical structure of the field unit used in the microclimate monitoring system. It shows the integration of the sensor, processing unit, and power system within the unit, detailing the flow of data and energy.
 
