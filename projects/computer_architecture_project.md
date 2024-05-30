@@ -87,32 +87,5 @@ int main(){
 	double Time_End = omp_get_wtime(); // end the timer
 	ex_time += (Time_End - Time_Start); //add the time of each loop to toghther for total time executing
 
-	printf("\n");
-	printf("Data Vectore Element: 0\n"); //print the results of the first operation
-	printf("x[i]: %lf\n",x[0]);
-	printf("y[i]: %lf\n",y[0]);
-	printf("a[i]: %lf\n",a[0]);
-	printf("z[i]: %lf\n",z[0]);
-
-	printf("Processor Being Testeted: Intel Xeon 6638\n");
-
-	printf("Processor Clock Freq: 3.20E+09\n");
-
-	printf("Arithmetic Algorithm Testeted: DAXPY Double Precision Floating Point z[i] = (a[i]*x[i]) + y[i]\n");
-
-	printf("Compiler version, and command line option/flag settings: -O2 -fopenmp - march=cascadelake -fno-tree-vectorize\n");
-
-	printf("Number of elements [i] per vector: %d\n",Array_Size);
-
-	printf("Number of outer loops to improve resolution: %d\n",Out_Loops);
-
-	printf("Total Elapsed time to complete benchmark: %.3f\n",ex_time);
-
-	_mm_free(x);
-	_mm_free(y);
-	_mm_free(z);
-	_mm_free(a);
-
-	printf("\n");
-	printf("--------------------DONE---------------------\n");
-}
+![Benchmark Output -O0](/images/computer_architecture_project_images/VM_Test_O0.jpg)
+**Figure 1: Benchmark Output with Compiler Optimization -O0** - This screenshot displays the output of the benchmark test running on an Intel Xeon 6338 processor with compiler optimization set to -O0. The test measures the execution time for the DAXPY algorithm without any optimization, providing a baseline for performance comparison. The output details include processor speed, the arithmetic algorithm tested, and the total elapsed time to complete the benchmark.
