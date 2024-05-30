@@ -46,15 +46,19 @@ The project demonstrated the feasibility of a self-sustaining microcontroller sy
 Here are some visuals from the project
 
 ![Logical Design Diagram](/images/nnl_capstone_images/nnl_logical_design.JPG)
+
 **Figure 1: Logical Design Diagram** - This diagram presents the logical layout of the energy harvesting system, detailing the connections between ambient energy sources (solar and vibration), the power management system, and the low-power microcontroller setup leading to a computer for data processing. This outlines how various transducers integrate into the system to maintain continuous operation.
 
 ![Logical Design Diagram](/images/nnl_capstone_images/nnl_micro_power_usage.JPG)
+
 **Figure 2: Microcontroller Power Usage Graph** - This graph illustrates the power consumption metrics of the low-power microcontroller in different operational modes. It highlights the efficiency of the microcontroller's sleep and active states, crucial for minimizing energy usage in remote sensing applications.
 
 ![Logical Design Diagram](/images/nnl_capstone_images/nnl_vibrational_voltage_output.JPG)
+
 **Figure 3: Vibration Transducer Voltage Output** - This graph shows the voltage output from a vibration transducer under varying conditions, demonstrating the sensor's response to different force levels and its potential effectiveness in energy harvesting applications.
 
 ![Logical Design Diagram](/images/nnl_capstone_images/nnl_voltage_output_transducers.JPG)
+
 **Figure 4: Voltage Output of Different Transducers** - This chart compares the minimum and maximum voltage outputs of various transducers under different conditions, including solar panels and piezoelectric devices. It provides a comparative analysis of each transducer’s performance, crucial for selecting the optimal components for energy harvesting.
 
 Thank you for exploring this project. For more detailed discussions or technical inquiries, feel free to contact me.
