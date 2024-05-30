@@ -41,5 +41,14 @@ The project demonstrated the feasibility of a self-sustaining microcontroller sy
 
 - Further development will focus on refining the energy management system, enhancing data transmission security, and fully integrating the system into a printed circuit board (PCB) for robustness and ease of deployment.
 
+## Gallery
+
+Here are some visuals from the project
+
+![Logical Design Diagram](/images/junior_capstone_weather_monitor_images/jun_logical_design.jpg)
+
+**Figure 1: Logical Design Diagram** - This diagram outlines the logical structure of the field unit used in the microclimate monitoring system. It shows the integration of the sensor, processing unit, and power system within the unit, detailing the flow of data and energy.
+
+
 Thank you for exploring this project. For more detailed discussions or technical inquiries, feel free to contact me.
 
