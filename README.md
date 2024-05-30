@@ -13,7 +13,7 @@ Throughout my academic and professional experiences, I have developed a robust s
 Here are some areas where I excel:
 
 - **Technical Design:** Proficient in AutoDesk CAD and AutoDesk Inventor for creating detailed engineering designs and 3D models.
-- **Software Development:** Experienced in programming with C, C++, and Java, focusing on system integration and efficiency improvements.
+- **Software Development:** Experienced in programming with C, C++, Java, Python, and Linux, gained through various courses during university studies. 
 - **System Analysis and Data Mastery:** Skilled in using LTSpice for circuit simulation, validation, and optimization. I thrive on analyzing complex data sets to diagnose issues and devise effective solutions, using data-driven insights to back up my findings.
 - **Project Management:** Demonstrated ability to lead projects from conceptualization through to implementation, ensuring goals are met on time and within budget.
 
