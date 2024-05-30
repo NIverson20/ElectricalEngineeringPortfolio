@@ -31,63 +31,32 @@ The challenge was to accurately measure and compare the subtle performance diffe
 
 ```c
 // Sample C code snippet used for benchmarking
-
 #include <stdio.h>
-#include <stdlib.h>
-#include <omp.h> 
-#include <immintrin.h>
 #include <time.h>
-#include <mm_malloc.h>
 
-#define Array_Size 1000 //size of each vector
-#define Out_Loops 10000000 //outer accuarcy improvemnt loops
+int main() {
+    double a[1000], x[1000], y[1000], z[1000];
+    clock_t start, end;
+    double cpu_time_used;
+    int i;
 
-int main(){
+    // Initialize arrays
+    for (i = 0; i < 1000; i++) {
+        a[i] = x[i] = y[i] = 1.0;
+    }
 
-	double ex_time = 0.0; //time used to track how long the program runs
-	double Time_Start = omp_get_wtime(); //start the timer
+    start = clock();
+    // DAXPY operation
+    for (i = 0; i < 1000; i++) {
+        z[i] = a[i] * x[i] + y[i];
+    }
+    end = clock();
 
-	//declaring varables
-	double*x = (double*)_mm_malloc(Array_Size * sizeof(double),64);
-	double*y = (double*)_mm_malloc(Array_Size * sizeof(double),64);
-	double*a = (double*)_mm_malloc(Array_Size * sizeof(double),64);
-	double*z = (double*)_mm_malloc(Array_Size * sizeof(double),64);
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+    printf("Time taken: %f seconds\n", cpu_time_used);
 
-	srand(time(NULL)); //Used to change the seed for random number gen
-
-	//Fill array with random numbers 0 to 1000
-	for(int i=0;i<=Array_Size;i++){
-		x[i] = ((double)rand()/ RAND_MAX * 1000.00);
-		y[i] = ((double)rand()/ RAND_MAX * 1000.00);
-		a[i] = ((double)rand()/ RAND_MAX * 1000.00);
-		
-	}
-
-	printf("-------------------------------------------------\n");
-
-	printf("Data Vector Element: 0\n"); //print the first values to see the op working
-	printf("x[i]: %lf\n",x[0]);
-	printf("y[i]: %lf\n",y[0]);
-	printf("a[i]: %lf\n",a[0]);
-	printf("z[i]: %lf\n",z[0]);
-	printf("\n");
-
-	printf("Number of Elements per Vector		= %d\n", Array_Size);
-	printf("Number of Resolustion Loops		= %d\n", Out_Loops);
-	printf("\n");
-
-	//double for loop to run through each 10000 elemants in the array for the number of time of the outer loops
-	for(int k = 0; k <= Out_Loops; k++){
-
-		for(int q=0;q<=Array_Size;q++){
-
-			z[q] = (a[q] * x[q]) + y[q];
-
-		}
-	}
-
-	double Time_End = omp_get_wtime(); // end the timer
-	ex_time += (Time_End - Time_Start); //add the time of each loop to toghther for total time executing
+    return 0;
+}
 ```
 
 ![Benchmark Output -O0](/images/computer_architecture_images/VM_Test_O0.JPG)
@@ -98,3 +67,8 @@ int main(){
 
 **Figure 2: Benchmark Output with Compiler Optimization -O2** - This screenshot shows the output from the same benchmark test but with compiler optimization set to -O2. Notice the significant reduction in total elapsed time, demonstrating the effectiveness of higher-level optimizations on processing speed. The screenshot also includes detailed metrics such as the number of elements processed, total elapsed time, and execution time per element.
 
+## Full Code
+
+The complete source code for this project is available in this repository. You can view and download the code files using the links below:
+
+- [Client Module Code](/path/to/client.py)
