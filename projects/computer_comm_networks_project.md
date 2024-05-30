@@ -39,14 +39,15 @@ The implementation successfully demonstrated the use of both TCP and SNW protoco
 
 Below are some excerpts from the project's codebase, showcasing the implementation of the client, cache, and server modules, as well as the transport protocols.
 
-```python
+
 ## Code Snippets
 
 Below are some excerpts from the project's codebase, showcasing the implementation of the client, cache, and server modules, as well as the transport protocols.
 
 ### Client.py
-```python
+
 # Sample from client.py
+```python
 import socket
 
 def send_file(filename):
@@ -57,8 +58,9 @@ def send_file(filename):
         s.sendall(data)
     s.close()
 ```
-```pyton
+
 # Sample from cache.py
+```pyton
 class Cache:
     def __init__(self):
         self.files = {}
