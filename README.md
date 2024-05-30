@@ -19,7 +19,18 @@ Here are some areas where I excel:
 
 ## Projects
 
-In this portfolio, you will find detailed descriptions of projects that I have led or been significantly involved in, including my Capstone project on energy harvesting devices and my impactful internship at Chemprene LLC. These projects showcase my ability to apply complex engineering principles in practical settings to achieve tangible results.
+In this portfolio, you will find detailed descriptions of various projects that I have led or been significantly involved in across different domains of engineering and computer science. Each project showcases my ability to apply complex engineering principles and software development skills in practical, real-world settings. Below is a summary of the projects included:
+
+- **Capstone Project on Energy Harvesting Devices**: This project involved designing and developing an embedded system capable of harvesting energy from environmental sources to power a microcontroller without external electricity.
+
+- **Internship at Chemprene LLC**: During this internship, I contributed to enhancing manufacturing processes through the development of standard operating procedures and the implementation of process improvements that significantly increased efficiency and safety.
+
+- **Computer Communication Networks Project**: Developed a file transfer system using both TCP and custom SNW protocols to manage data transmission between a client and a server. This project emphasized network protocol design and performance analysis.
+
+- **Computer Organization and Architecture Project**: This involved creating a benchmarking tool in C to measure and compare the performance of different virtual machines under various compiler optimizations, providing insights into software performance engineering.
+
+These projects reflect a wide range of skills, from embedded systems engineering to network communications and performance optimization. Each description provides insights into the challenges faced and the solutions developed to overcome them, underscoring my technical proficiency and problem-solving capabilities.
+
 
 ## Contact
 
