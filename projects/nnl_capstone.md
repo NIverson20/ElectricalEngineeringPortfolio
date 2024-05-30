@@ -50,7 +50,7 @@ Here are some visuals from the project
 **Figure 1: Logical Design Diagram** - This diagram outlines the logical structure of the field unit used in the microclimate monitoring system. It shows the integration of the sensor, processing unit, and power system within the unit, detailing the flow of data and energy.
 ![Logical Design Diagram](/images/nnl_capstone_images/nnl_micro_power_usage.JPG)
 
-![Logical Design Diagram](/images/nnl_capstone_images/nnl_micro_power_usage.JPG)
+![Logical Design Diagram](/images/nnl_capstone_images/nnl_vibrational_voltage_output.JPG)
 
 ![Logical Design Diagram](/images/nnl_capstone_images/nnl_micro_power_usage.JPG)
 
